@@ -5,6 +5,7 @@
 		<title>swatch</title>
 		<link rel="stylesheet" type="text/css" href="css/iconfont.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="css/swiper.min.css" />
 			<style type="text/css">
 				body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,th,form,h1,h2,h3,h4,h5,h6,input,textarea,figure{
 					margin:0;
@@ -23,7 +24,10 @@
 				img{
 					border:0;
 				}
-
+				.swiper-pagination-bullet{
+					width: 15px;
+					height: 15px;
+				}
 			</style>
 	</head>
 	<body>
@@ -48,10 +52,49 @@
 				<a href="#">斯沃琪俱乐部</a>
 				<a href="#">官方商城</a>
 			</div>
+			<!--.....下拉列表....-->
+			<div class="menu">
+				<div class="menuM">
+					<h5>新品系列</h5>
+					<ul>
+						<li><a href="#">THINK FUN</a></li>
+						<li><a href="#">THINK FUN</a></li>
+						<li><a href="#">THINK FUN</a></li>
+						<li><a href="#">THINK FUN</a></li>
+						<li><a href="#">THINK FUN</a></li>
+					</ul>
+				</div>
+				<div class="menuM">
+					<h5>太阳眼镜</h5>
+					<ul>
+						<li><a href="#">THINK FUN</a></li>
+						<li><a href="#">THINK FUN</a></li>
+						<li><a href="#">THINK FUN</a></li>
+					</ul>
+				</div>
+				<div class="menuM">
+					<h5>特别款</h5>
+					<ul>
+						<li><a href="#">THINK FUN</a></li>
+						<li><a href="#">THINK FUN</a></li>
+					</ul>
+				</div>
+			</div>
 		</header>
 		<!--...轮播图。。。-->
-		<div class="lunbo">
-			<img src="img/lunbo1.jpg"/>
+		<!-- Swiper -->
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+			      <div class="swiper-slide"><img src="img/lunbo1.jpg"/></div>
+			      <div class="swiper-slide"><img src="img/lunbo2.jpg"/></div>
+			      <div class="swiper-slide"><img src="img/lunbo3.jpg"/></div>
+			      <div class="swiper-slide"><img src="img/lunbo4.jpg"/></div>
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination"></div>
+		    <!-- Add Arrows -->
+		    <div class="swiper-button-next"></div>
+		    <div class="swiper-button-prev"></div>
 		</div>
 		
 		<!--....content...-->
@@ -60,7 +103,7 @@
 				<a href="#"><img src="img/1.jpg"/></a>
 			</div>
 			<div class="contentDown">
-				<h4>斯沃琪百达女表</h4>
+				<h4 class="contentH4">斯沃琪百达女表</h4>
 				<p>斯沃琪简约而不简单，来这里购买女士系列腕表。色彩斑斓的创意抑或时髦流行的腕表—适合任何女士的小物件</p>
 			</div>
 		</div>
@@ -69,7 +112,7 @@
 				<a href="#"><img src="img/2.jpg"/></a>
 			</div>
 			<div class="contentDown">
-				<h4>斯沃琪百达女表</h4>
+				<h4 class="contentH4">斯沃琪百达女表</h4>
 				<p>斯沃琪简约而不简单，来这里购买女士系列腕表。色彩斑斓的创意抑或时髦流行的腕表—适合任何女士的小物件</p>
 			</div>
 		</div>
@@ -78,7 +121,7 @@
 				<a href="#"><img src="img/3.jpg"/></a>
 			</div>
 			<div class="contentDown">
-				<h4>斯沃琪百达女表</h4>
+				<h4 class="contentH4">斯沃琪百达女表</h4>
 				<p>斯沃琪简约而不简单，来这里购买女士系列腕表。色彩斑斓的创意抑或时髦流行的腕表—适合任何女士的小物件</p>
 			</div>
 		</div>
@@ -88,7 +131,7 @@
 				<a href="#"><img src="img/4.jpg"/></a>
 			</div>
 			<div class="contentDown">
-				<h4>斯沃琪百达女表</h4>
+				<h4 class="contentH4">斯沃琪百达女表</h4>
 				<p>斯沃琪简约而不简单，来这里购买女士系列腕表。色彩斑斓的创意抑或时髦流行的腕表—适合任何女士的小物件</p>
 			</div>
 		</div>
@@ -97,7 +140,7 @@
 				<a href="#"><img src="img/5.jpg"/></a>
 			</div>
 			<div class="contentDown">
-				<h4>斯沃琪百达女表</h4>
+				<h4 class="contentH4">斯沃琪百达女表</h4>
 				<p>斯沃琪简约而不简单，来这里购买女士系列腕表。色彩斑斓的创意抑或时髦流行的腕表—适合任何女士的小物件</p>
 			</div>
 		</div>
@@ -106,7 +149,7 @@
 				<a href="#"><img src="img/6.jpg"/></a>
 			</div>
 			<div class="contentDown">
-				<h4>斯沃琪百达女表</h4>
+				<h4 class="contentH4">斯沃琪百达女表</h4>
 				<p>斯沃琪简约而不简单，来这里购买女士系列腕表。色彩斑斓的创意抑或时髦流行的腕表—适合任何女士的小物件</p>
 			</div>
 		</div>
@@ -116,7 +159,7 @@
 				<a href="#"><img src="img/7.jpg"/></a>
 			</div>
 			<div class="contentDown">
-				<h4>斯沃琪百达女表</h4>
+				<h4 class="contentH4">斯沃琪百达女表</h4>
 				<p>斯沃琪简约而不简单，来这里购买女士系列腕表。色彩斑斓的创意抑或时髦流行的腕表—适合任何女士的小物件</p>
 			</div>
 		</div>
@@ -125,7 +168,7 @@
 				<a href="#"><img src="img/8.jpg"/></a>
 			</div>
 			<div class="contentDown">
-				<h4>斯沃琪百达女表</h4>
+				<h4 class="contentH4">斯沃琪百达女表</h4>
 				<p>斯沃琪简约而不简单，来这里购买女士系列腕表。色彩斑斓的创意抑或时髦流行的腕表—适合任何女士的小物件</p>
 			</div>
 		</div>
@@ -134,7 +177,7 @@
 				<a href="#"><img src="img/9.jpg"/></a>
 			</div>
 			<div class="contentDown">
-				<h4>斯沃琪百达女表</h4>
+				<h4 class="contentH4">斯沃琪百达女表</h4>
 				<p>斯沃琪简约而不简单，来这里购买女士系列腕表。色彩斑斓的创意抑或时髦流行的腕表—适合任何女士的小物件</p>
 			</div>
 		</div>
@@ -183,3 +226,82 @@
 	</div>
 	</body>
 </html>
+
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/swiper.min.js" ></script>
+
+<script type="text/javascript">
+	var swiper = new Swiper('.swiper-container', {
+	      slidesPerView: 1,
+	      spaceBetween: 30,
+	      loop: true,
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true,
+	      },
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	    autoplay: {
+            delay: 4000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        }
+	});
+$(function(){
+
+//	$(".contentBox").mouseenter(function(){
+// 		$(".contentH4").css("color","#e8021f");
+// 		$(".contentDown").css("border-bottom-color","#e8021f");
+//	});
+//	$(".contentBox").mouseleave(function(){
+// 		$(".contentH4").css("color","black");
+// 		$(".contentDown").css("border-bottom-color","white");
+//	});
+//------------------contetnBox滑入时变色--------------------
+$(".contentBox").each(function(){
+	$(this).hover(
+		function(){
+			$(this).find(".contentH4").css("color","#e8021f");
+			$(this).find(".contentDown").css("border-bottom-color","#e8021f");
+		},
+		function(){
+			$(this).find(".contentH4").css("color","black");
+			$(this).find(".contentDown").css("border-bottom-color","white");
+		}
+	)
+})
+
+//----------------导航划入变色------------------------
+$(".headerBox>a").each(function(){
+	$(this).hover(
+		function(){
+			$(".menuM").slideDown().css("display","block");
+		},
+		function(){
+			$(".menuM").slideUp().css("display","none");
+		}
+	)
+})
+
+//下拉菜单划过显示
+$(".headerBox>a").each(function(){
+	$(this).hover(
+		function(){
+			$(this).css("text-decoration","underline");
+			$(this).siblings().css("color","lightgray");
+		},
+		function(){
+			$(this).css("text-decoration","none");
+			$(this).siblings().css("color","#646464");
+		}
+	)
+})
+	
+
+});
+	
+</script>
+

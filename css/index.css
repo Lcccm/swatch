@@ -19,7 +19,10 @@ nav a{
 	float: left;
 	font-size: 10px;
 	color: #646464;
-	margin:6px 0px 6px 33px;
+	padding:6px 16px 6px 16px;
+}
+nav a:hover{
+	text-decoration: underline;
 }
 nav p{
 	float: right;
@@ -30,6 +33,7 @@ header{
 	height: 128px;
 	margin: 0 auto;
 	background: white;
+	position: relative;
 }
 header img{
 	display: inline-block;
@@ -41,23 +45,91 @@ header a{
 	float: left;
 	font-size: 18px;
 	color: #646464;
-	margin:8px 0px 8px 28px;
+	padding:8px 14px 8px 14px;
 }
 .headerBox{
 	overflow: hidden;
-	padding: 42px 0 0 10px;
+	padding: 42px 0 42px 10px;
 }
-/*...轮播图....*/
-.lunbo{
+.menu{
+	position: absolute;
+	left: 0;
+	top: 128px;
 	width: 100%;
 	height: auto;
+	background: white;
+	z-index: 2;
+}
+.menuM{
+	width: 30%;
+/*	height: 0;*/
+	float: left;
+	padding-bottom: 30px;
+	display: none;
+}
+.menuM h5{
+	font-size: 16px;
+	margin:8px 30px ;
+}
+/*.menuM li{
+	float: left;
+}*/
+.menuM a{
+	display: block;
+	width: 80%;
+	box-sizing: border-box;
+	font-size: 12px;
+	color: #6f6f6f;
+	margin: 6px 28px;
+}
+
+
+
+
+/*...轮播图....*/
+.swiper-container {
+      width: 100%;
+      height: auto;
+      margin-top: 30px
+    }
+.swiper-slide img{
+	width: 100%;
+	height: auto;
+}
+.swiper-pagination-bullet{
+	width: 20px;
+	height: 20px;
+}
+.swiper-slide {
+      text-align: center;
+      font-size: 20px;
+      background: #fff;
+
+      /* Center slide text vertically */
+	  display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+/*#lunbo{
+	width: 100%;
+	height: 680px;
 	margin: 30px auto 15px;
 	overflow: hidden;
 }
 .lunbo img{
 	width: 100%;
 	height:auto;
-}
+}*/
 
 /*...content...*/
 .contentBox{
@@ -67,6 +139,7 @@ header a{
 	margin-top: 40px;
 	float: left;
 }
+
 .contentUp{
 	width: 100%;
 	height: auto;
@@ -87,12 +160,13 @@ header a{
 	padding-left: 10px;
 	padding-right: 15px;
 	box-sizing: border-box;
-	border-bottom: 1px solid white;
+	border-bottom: 2px solid white;
 }
 .contentDown h4{
 	font-size: 16px;
 	padding-top: 15px;
 	padding-bottom: 12px;
+	color: #000000;
 }
 .contentDown p{
 	font-size: 12px;
@@ -129,6 +203,9 @@ header a{
 	border-bottom: 1px dotted #b2b2b2;
 	margin-right: 48px;
 }
+.lianjieBox a:hover{
+	background: lightgray;
+}
 .lianjieBox a:nth-child(7){
 	border-top: none;
 }
@@ -161,6 +238,12 @@ header a{
 	color: #E1E1E1;
 	margin: 0 3px;
 }
+.icon-weibo:hover{
+	color: #e8021f;
+}
+.icon-weixin:hover{
+	color: limegreen;
+}
 /*....bottom...*/
 .bottom{
 	width: 100%;
@@ -180,6 +263,9 @@ header a{
 	font-size: 10px;
 	color: #646464;
 	margin:0 12px;
+}
+.bottomBox a:hover{
+	text-decoration: underline;
 }
 .bottom p{
 	font-size: 8px;
