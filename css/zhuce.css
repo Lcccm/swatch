@@ -1,0 +1,139 @@
+/*....yonghudenglu.....*/
+.yonghu{
+	width: 100%;
+	height: auto;
+	margin-top:30px;
+	background: white;
+	padding: 40px 60px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.yonghuL{
+	width: 45%;
+	height: auto;
+	float: left;
+}
+.yonghu span{
+	display: block;
+}
+.yonghu h3{
+	font-size: 26px;
+}
+.yonghu h4{
+	font-size: 18px;
+	color: #8D8D8D;
+	font-weight: 100;
+	margin-top: 5px;
+}
+.yonghuP1{
+	font-size: 14px;
+	color: #8D8D8D;
+	margin-top:30px;
+	margin-bottom: 10px;
+}
+.yonghuSpan{
+	font-size: 12px;
+	color: #8D8D8D;
+	margin-top:28px ;
+}
+.yonghuP2{
+	display: block;
+	font-size: 12px;
+	color: #ea1a1a;
+	margin-top:28px ;
+	padding-bottom: 32px;
+}
+.yonghuP3{
+	font-size: 12px;
+	color: #8D8D8D;
+	font-weight: 600;
+	margin-top:30px ;
+	padding-bottom: 20px;
+}
+.yonghuShuRu a{
+	display: block;
+	font-size: 12px;
+	color:black;
+	margin-top: 5px;
+}
+.yonghuShuRu a:hover{
+	text-decoration: underline;
+}
+.yonghuP4 a{
+	display: inline-block;
+	margin-right:20px ;
+}
+.yonghuP4 a .iconfont{
+	font-size: 28px;
+}
+#dizhiId,#passwordId{
+	width: 280px;
+	height: 40px;
+	background: #f4f4f4;
+	border: none;
+	margin-top: 5px;
+}
+.submitId{
+	width: 280px;
+	height: 40px;
+	font-size: 14px;
+	color: white;
+	font-weight: 600;
+	background: #ea1a1a;
+	border: none;
+	margin-top: 5px;
+}
+.yonghuR{
+	width: 55%;
+	height: auto;
+	float: left;
+	border-left: 1px solid lightgray;
+	padding-left: 70px;
+	/*padding-right: 40px;
+	padding-bottom: 40px;*/
+	box-sizing: border-box;
+}
+.yonghuR ul{
+	width: 100%;
+	height: 40px;
+}
+.yonghuR ul li{
+	width: 50%;
+	height: 40px;
+	border: 1px solid lightgray;
+	box-sizing: border-box;
+	float: left;
+	font-size: 14px;
+	text-align: center;
+	line-height: 40px;
+}
+.yonghuR ul li:first-child{
+	color: #ea1a1a;
+	border-bottom: none;
+}
+.zhuceId{
+	width: 100%;
+	height: 40px;
+	background: #f4f4f4;
+	border: none;
+	margin-top: 5px;
+}
+.yonghuShuRuTiaokuan{
+	margin-bottom: 30px;
+}
+.yonghuShuRuTiaokuan label{
+	font-size: 14px;
+	color: #9c9ca4;
+}
+.submitId02{
+	width: 300px;
+	height: 50px;
+	float: right;
+}
+.submitId03{
+	width: 150px;
+	margin-top: 30px;
+}
+.form02{
+	display: none;
+}

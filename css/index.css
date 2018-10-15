@@ -38,9 +38,9 @@ header{
 header img{
 	display: inline-block;
 	float: left;
-	margin:8px 0px 8px 33px;
+	margin:8px 8px 8px 33px;
 }
-header a{
+.headerA{
 	display: inline-block;
 	float: left;
 	font-size: 18px;
@@ -49,7 +49,16 @@ header a{
 }
 .headerBox{
 	overflow: hidden;
-	padding: 42px 0 42px 10px;
+	padding: 42px 0 0px 10px;
+}
+.headerBox ul{
+	overflow: hidden;
+	
+}
+.headerBox li{
+	overflow: hidden;
+	float: left;
+	padding-bottom: 42px;
 }
 .menu{
 	position: absolute;
@@ -59,32 +68,50 @@ header a{
 	height: auto;
 	background: white;
 	z-index: 2;
+	
 }
 .menuM{
 	width: 30%;
-/*	height: 0;*/
 	float: left;
 	padding-bottom: 30px;
 	display: none;
+	padding-right: 20px;
 }
 .menuM h5{
 	font-size: 16px;
 	margin:8px 30px ;
 }
-/*.menuM li{
-	float: left;
-}*/
+.menuM li{
+	width: 80%;
+	padding: 6px 28px;
+}
 .menuM a{
 	display: block;
-	width: 80%;
+	width: 100%;
 	box-sizing: border-box;
-	font-size: 12px;
+	font-size: 14px;
 	color: #6f6f6f;
 	margin: 6px 28px;
 }
-
-
-
+.menuM a:hover{
+	color: #e8021f;
+}
+.menuM span{
+	display: block;
+}
+.menuM span a{
+	font-size: 16px;
+	color: white;
+	background: #747474;
+	padding: 8px 0;
+	margin-top: 10px;
+	text-indent: 30px;
+	
+}
+.menuM span a:hover{
+	color: #646464;
+	background: lightgray;
+}
 
 /*...轮播图....*/
 .swiper-container {

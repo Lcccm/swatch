@@ -1,0 +1,296 @@
+/*...最顶部...*/
+.dingbu{
+	padding: 9px 20px;
+	overflow: hidden;
+	height: auto;
+}
+.dingbu p{
+	font-size: 12px;
+	color: #8d8d8d;
+	float: left;
+}
+.dingbu a{
+	font-size: 12px;
+	color: black;
+	display: block;
+	float: right;
+}
+.dingbu a:hover{
+	color: darkgray;
+	text-decoration: underline;
+}
+/*...header....*/
+header{
+	width: 100%;
+	height: 120px;
+	background: white;
+	position: relative;
+}
+.headerL{
+	height: auto;
+	padding-top: 45px;
+	padding-left: 34px;
+	position: relative;
+	float: left;
+}
+.headerL img{
+	float: left;
+}
+.headerL ul{
+	float: left;
+}
+.headerL ul li{
+	float: left;
+	
+}
+.header123{
+	padding: 0 40px;
+	font-size: 18px;
+	color: #8d8d8d;
+}
+.headerFenlei{
+	font-size: 10px;
+	color:#8d8d8d ;
+	position: absolute;
+	left: 40px;
+	top: 85px;
+	z-index: 3;
+}
+.headerFenlei a{
+	font-size: 10px;
+	color:#8d8d8d ;
+}
+.headerFenlei a:hover{
+	color:#e8021f ;
+}
+.headerR{
+	height: auto;
+	overflow: hidden;
+	float: right;
+	padding-right: 20px;
+	overflow: hidden;
+}
+.headerR ul{
+	float: left;
+	overflow: hidden;
+}
+.headerR ul li{
+	float: left;
+}
+.searchId{
+	overflow: hidden;
+	float: left;
+	padding-top: 40px;
+}
+.abc{
+		width:180px;
+		height:38px;
+		color:white;
+		border:1px solid #e5e5e5;
+		border-right:none;
+		text-indent:14px;
+		float:left;
+		outline: none;
+		background: #eaeaea;
+}
+.def{
+		width:40px;
+		height:40px;
+		background:url(../img/search.png);
+		background-position: 0 6px;
+		border:1px solid #e5e5e5;
+		border-left:none;
+		text-indent:-200px;
+		float:left;
+		outline: none;
+}
+.headerR a{
+	float: left;
+	padding: 0 15px;
+	padding-top: 40px;
+}
+.zaixian{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: black;
+	vertical-align: middle;
+	padding: 0 18px;
+}
+
+
+/*....下拉列表....*/
+.menu{
+	position: absolute;
+	left: 0;
+	top: 70px;
+	width: 1260px;
+	height: auto;
+	background: white;
+	z-index: 4;
+	padding: 0 20px 0;
+	box-sizing: border-box;
+	display: flex;
+	
+}
+.menuM{
+	flex: 1;
+/*	float: left;*/
+	padding-bottom: 30px;
+	display: block;
+	padding-right: 20px;
+	display: none;
+}
+.menuM h5{
+	font-size: 16px;
+	margin:40px 30px 8px;
+}
+.menuM ul li{
+	width: 80%;
+	padding: 6px 28px;
+}
+.menuM a{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #6f6f6f;
+	margin: 5px 10px;
+}
+.menuM a:hover{
+	color: #e8021f;
+}
+.menuM span{
+	display: block;
+}
+.menuM span a{
+	font-size: 16px;
+	color: white;
+	background: #747474;
+	padding: 8px 0;
+	margin-top: 10px;
+	text-indent: 30px;
+	
+}
+.menuM span a:hover{
+	color: #646464;
+	background: lightgray;
+}
+
+/*....denglu......*/
+.denglu{
+	width: 400px;
+	height:auto;
+	position: absolute;
+	right:0px;
+	top: 80px;	
+	z-index: 2;
+	display: none;
+}
+.zhanghu{
+	width: 100%;
+	background: #c5c5c5;
+	color: white;
+	font-size: 16px;
+	padding: 12px 0;
+	text-indent: 20px;
+	font-weight: 600;
+}
+.dengluContent{
+	border-bottom: 1px solid darkgray;
+	background: white;
+	overflow: hidden;
+}
+.dengluContent h3{
+	font-size: 24px;
+	color: #8D8D8D;
+	padding: 26px;
+}
+.dengluContent p{
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+.dengluContent a:hover{
+	text-decoration: underline;
+}
+.dengluContent a{
+	font-size: 16px;
+	color: black;
+	padding-top: 0;
+	padding-left:30px;
+	padding-bottom: 25px;
+}
+.dengluContent .iconfont{
+	font-size: 22px;
+	color: #8D8D8D;
+	margin-right: 6px;
+}
+
+
+
+/*....nav.....*/
+nav{
+	width: 100%;
+	height: auto;
+	padding: 50px 30px;
+	background: white;
+	margin: 40px 0;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+nav ul{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+nav ul li{
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+.iconfont{
+	font-size: 28px;
+	color: gray;
+}
+.navU li span{
+	display: block;
+	width: 100%;
+	height: auto;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.navU a{
+	color: gray;
+}
+
+/*....bottom...*/
+.bottom{
+	width: 100%;
+	height: 170px;
+	background: white;
+	margin-top: 30px;
+	overflow: hidden;
+	float: left;
+
+}
+.bottomBox{
+	text-align: center;
+	margin-top: 34px;
+	margin-bottom: 26px;
+}
+.bottomBox a{
+	font-size: 10px;
+	color: #646464;
+	margin:0 12px;
+}
+.bottomBox a:hover{
+	text-decoration: underline;
+}
+.bottom p{
+	font-size: 8px;
+	color: #757575;
+	text-align: center;
+	margin-bottom: 5px;
+}
