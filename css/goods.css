@@ -1,0 +1,212 @@
+ 
+/*.....detail.....*/
+.detail{
+	width:100% ;
+	height: auto;
+	padding:70px 70px 100px;
+	background: white;
+	margin-top: 30px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.detailL{
+	width: 55%;
+	height: auto;
+	overflow: hidden;
+	float: left;	
+}
+.datailXiao{
+	width: 80px;
+	height: auto;
+	float: left;
+}
+.detailImg{
+	display: block;
+	width: 80px;
+	height: 110px;	
+	margin-bottom: 10px;
+}
+.datailXiao img:first-child{
+	border: 2px solid #fe5a09;
+	
+}
+.datailDa{
+	margin-left: 5px;
+	float: left;
+}
+.detailR{
+	width: 45%;
+	float: right;
+	margin: 10px 0;
+}
+.detailR h3{
+	font-size: 28px;
+	margin-bottom: 14px;
+	
+}
+.detailR p{
+	font-size: 16px;
+	color: #8D8D8D;
+}
+.detailR h2{
+	font-size: 45px;
+	margin: 70px 0 50px;
+}
+.number{
+	margin-bottom:30px ;
+}
+.number span{
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.signClass{
+	width: 25px;
+	height: 25px;
+	background: white;
+	border: 1px solid #eaeaea;
+	vertical-align: middle;
+	margin:0 10px;
+}
+
+.goumai{
+	overflow: hidden;
+}
+.goumai a{
+	display: block;
+	width: 220px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	float: left;
+	text-align: center;
+	border: 1px solid #EA1A1A;
+	margin-right: 20px;
+	box-sizing: border-box;
+	
+}
+.goumai a:first-child{
+	background:#EA1A1A ;
+	color: white;
+}
+.goumai a:last-child{
+	background:white ;
+	color: #EA1A1A;
+}
+.goumai a:first-child:hover{
+	background:#eaeaea ;
+	color: #EA1A1A;
+	border: none;
+}
+.goumai a:last-child:hover{
+	background:#eaeaea ;
+	border: none;
+}
+.fenxiang{
+	margin: 60px 0 45px;
+}
+.fenxiang a{
+	font-size: 16px;
+	color: #8d8d8d;
+}
+
+/*......滑动.....*/
+.huadong{
+	width: 100%;
+	height: auto;
+	padding:20px 30px;
+	overflow: hidden;
+	box-sizing: border-box;
+	background: #EAEAEA;
+}
+.huadong .iconfont{
+	font-size: 28px;
+	color: black;
+}
+.huadong span{
+	font-size: 16px;
+	font-weight: 600;
+	float: left;
+	margin-top: 20px;
+}
+.huadong span:hover{
+	color: #EA1A1A;
+}
+.huadong ul{
+	float: right;
+}
+.huadong li{
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+.huadong li:hover{
+	background: #EA1A1A;
+	color: white;
+}
+
+/*.....更多信息....*/
+.more{
+	padding: 80px 40px;
+	background: white;
+}
+.more h3{
+	font-size: 18px;
+	color: #EA1A1A;
+	margin-bottom: 30px;
+}
+.more tr{
+	height: 30px;
+	line-height: 30px;
+}
+.more table th{
+	color: #8D8D8D;
+	width: 300px;
+	text-align: left;
+}
+.more td{
+	color: black;
+	width: 300px;
+	text-align: left;
+	font-weight: 600;
+}
+
+
+/*.....类似商品....*/
+.likeness{
+	padding: 80px 40px 0;
+	background: white;
+	margin-top: 30px;
+	overflow:hidden ;
+	width: 100%;
+	box-sizing: border-box;
+}
+.likeness h3{
+	font-size: 18px;
+	color: #EA1A1A;
+	margin-bottom: 30px;
+}
+.chanpin{
+	width: 17%;
+	height: auto;
+	margin: 15px;
+	background: white;
+	float: left;
+}
+.chanpin a{
+	display: block;
+	font-size: 14px;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.chanpinTu{
+	margin: 0 auto;
+	width: 86%;
+	height: auto;
+	margin-top: 15px;
+}
+.chanpinTu img{
+	width: 100%;
+	height: auto;
+}
