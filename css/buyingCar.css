@@ -1,0 +1,146 @@
+
+
+/*...title...*/
+.title{
+	font-size: 16px;
+	font-weight: 600;
+	color: #8D8D8D;
+	text-align: center;
+	padding: 15px;
+}
+/*....内容.....*/
+.buyingCar{
+	padding: 100px 90px 30px;
+	background: white;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.buyingCar h2{
+	font-size: 28px;
+	margin-bottom: 35px;
+}
+.buyingCar table{
+	width: 100%;
+	height: auto;
+}
+
+.buyingCar table th,td{
+	width: 20%;
+	font-size: 12px;
+	color: #8D8D8D;
+	padding: 24px 8px 15px;
+	text-align: left;
+	margin-bottom:3px ;
+	border-bottom: 1px solid #ccc;
+	
+}
+.buyingCar table th:first-child{
+	width: 40%;
+}
+
+.chanpinMingZi{
+	padding: 17px 0;
+}
+.chanpinMingZi img{
+	width: 70px;
+	height: 100px;
+	float: left;
+}
+.chanpinMingZi01{
+	float: left;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+.chanpinMingZi span{
+	font-size: 10px;
+	color: #8d8d8d;
+}
+.chanpinMingZi p{
+	font-size: 16px;
+	color: black;
+	font-weight: 600;
+}
+.shuLiang01{
+	font-size: 16PX;
+	color: black;
+}
+.signClass{
+	width: 25px;
+	height: 25px;
+	background: white;
+	border: 1px solid #646464;
+	vertical-align: middle;
+	margin:0 10px;
+}
+.danJia span{
+	font-size: 14px;
+	color: #666;
+	font-weight: 600;
+}
+.xiaoJi span{
+	font-size: 14px;
+	color: #666;
+	font-weight: 600;
+	margin-right: 100px;
+}
+
+.jiesuan{
+	float: right;
+	padding: 20px 40px;
+}
+.jiesuan table td{
+	width: 240px;
+	height: 32px;
+	border: none;
+}
+.jiesuan tr td:last-child{
+	text-align: right;
+}
+.jiesuan01 td{
+	font-size: 18px;
+	font-weight: 600;
+	color: #808080;
+}
+.jiesuan ul{
+	margin-top: 30px;
+}
+.jiesuan li{
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	text-align: center;
+	
+}
+.goOn{
+	display: block;
+	font-size: 14px;
+	color: black;
+}
+.goIn{
+	display: block;
+	font-size: 18px;
+	color: white;
+	background: #e8021f;
+}
+.goIn:hover{
+	color: #e8021f;
+	background: #eaeaea;
+}
+
+/*...购物车中显示的数量....*/
+.buyingShu{
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 50%;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+	background:#e8021f ;
+	position: absolute;
+	top: 30px;
+	right: 55px;
+}

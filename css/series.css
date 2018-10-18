@@ -13,7 +13,7 @@
 	padding-left: 35px;
 }
 .xinL a:hover{
-	color: #e8021f;
+	color: #E8021F;
 }
 .xinR{
 	float: right;
@@ -153,5 +153,6 @@
 .huiDing:hover{
 	color: black;
 	text-decoration: underline;
+	
 }
 
