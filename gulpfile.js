@@ -1,8 +1,8 @@
 //require:相当于<script src="gulp.js"></script>
 var gulp = require("gulp");
-var concat = require("gulp-concat");
-var uglify = require("gulp-uglify");
-var rename = require("gulp-rename");
+//var concat = require("gulp-concat");
+//var uglify = require("gulp-uglify");
+//var rename = require("gulp-rename");
 var sass = require("gulp-sass");
 
 let basepath = "D:\\phpStudy\\WWW\\swatch";
@@ -44,13 +44,26 @@ gulp.task("copy-css",function(){
 //管道：pipe。
 
 //合并并且压缩重命名js文件
-gulp.task("concatanduglifyandrename-js",function(){
-	gulp.src(["js/*.js"])
-	.pipe(concat("*.js"))
-	.pipe(gulp.dest(basepath+"\\js"))
-	.pipe(uglify())
-	.pipe(rename("*.min.js"))
-	.pipe(gulp.dest(basepath+"\\js"));
+//gulp.task("concatanduglifyandrename-js",function(){
+//	gulp.src(["js/*.js"])
+//	.pipe(concat("*.js"))
+//	.pipe(gulp.dest(basepath+"\\js"))
+//	.pipe(uglify())
+//	.pipe(rename("*.min.js"))
+//	.pipe(gulp.dest(basepath+"\\js"));
+//});
+
+
+//复制js
+gulp.task("js",function(){
+	gulp.src("js/*.js")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\swatch\\js"));
+});
+
+//复制php
+gulp.task("php",function(){
+	gulp.src("php/*.php")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\swatch\\php"));
 });
 
 //sass的编译
@@ -60,8 +73,8 @@ gulp.task("sass",function(){
 	.pipe(gulp.dest(basepath+"\\css"));
 });
 
-gulp.task("build",["copy-html","copy-img","copy-css","concatanduglifyandrename-js","sass"],function(){
-	console.log("o le");
+gulp.task("build",["copy-html","copy-img","copy-css","js","php","sass"],function(){
+	console.log("ok");
 });
 //监听
 gulp.task("watchall",function(){
@@ -69,7 +82,8 @@ gulp.task("watchall",function(){
 	gulp.watch("*.html",["copy-html"]);
 	gulp.watch("img/**/*",["copy-img"]);
 	gulp.watch("css/*.css",["copy-css"]);
-	gulp.watch("js/*.js",["concatanduglifyandrename-js"]);
+	gulp.watch("js/*.js",["js"]);
 	gulp.watch("img/**/*",["copy-img"]);
+	gulp.watch("php/*.php",["php"]);
 	gulp.watch("sass/*.scss",["sass"]);
 });

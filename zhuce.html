@@ -154,7 +154,7 @@
 							</div>
 							<div class="dengluContent">
 								<h3>已注册账户</h3>
-								<p><a href="#">>登录</a></p>
+								<p><a href="denglu.html">>登录</a></p>
 							</div>
 							<div class="dengluContent">
 								<h3>登录方式</h3>
@@ -193,7 +193,7 @@
 				<p class="yonghuP1">进入登录页面</p>
 
 				<form>
-					<input type="button" class="submitId" value="登录" />	
+					<a href="denglu.html"><input type="button" class="submitId" value="登录" /></a>	
 				</form>
 				
 				<p class="yonghuP3">登录方式</p>
@@ -216,8 +216,11 @@
 				<!--......用邮件注册页面......-->
 				<form action="" method="post" class="form01">
 					<div class="yonghuShuRu">
-						<span class="yonghuSpan">* 名字</span>
-						<input type="text" class="zhuceId"/>
+						<span class="yonghuSpan yonghuSpan01">* 名字</span>
+						<span class="yonghuSpanIsRepeat">
+							
+						</span>
+						<input type="text" class="zhuceId zhuceId01"/>
 					</div>
 					<div class="yonghuShuRu">
 						<span class="yonghuSpan">  称谓</span>
@@ -233,8 +236,8 @@
 						<input type="text" class="zhuceId"/>
 					</div>
 					<div class="yonghuShuRu">
-						<span class="yonghuSpan">* 密码</span>
-						<input type="text" class="zhuceId"/>
+						<span class="yonghuSpan yonghuSpan02">* 密码</span>
+						<input type="text" class="zhuceId zhuceId02"/>
 					</div>
 					<div class="yonghuShuRu">
 						<span class="yonghuSpan">* 确定密码</span>
@@ -256,8 +259,11 @@
 				<!--......用手机号码注册页面......-->
 				<form action="" method="post" class="form02">
 					<div class="yonghuShuRu">
-						<span class="yonghuSpan">* 名字</span>
-						<input type="text" class="zhuceId"/>
+						<span class="yonghuSpan yonghuSpan01">* 名字</span>
+						<span class="yonghuSpanIsRepeat">
+							
+						</span>
+						<input type="text" class="zhuceId zhuceId01"/>
 					</div>
 					<div class="yonghuShuRu">
 						<span class="yonghuSpan">  称谓</span>
@@ -270,7 +276,7 @@
 					</div>
 					<div class="yonghuShuRu">
 						<span class="yonghuSpan">* 手机号码</span>
-						<input type="text" class="zhuceId"/>
+						<input type="text" class="zhuceId "/>
 					</div>
 					<div class="yonghuShuRu">
 						<input type="button" value="验证码" class="submitId submitId03"/>
@@ -280,8 +286,8 @@
 						<input type="text" class="zhuceId"/>
 					</div>
 					<div class="yonghuShuRu">
-						<span class="yonghuSpan">* 密码</span>
-						<input type="text" class="zhuceId"/>
+						<span class="yonghuSpan yonghuSpan02">* 密码</span>
+						<input type="text" class="zhuceId zhuceId02"/>
 					</div>
 					<div class="yonghuShuRu">
 						<span class="yonghuSpan">* 确定密码</span>
@@ -379,8 +385,38 @@ $(function(){
 		);
 	});
 	
-	
-	
+//--------------注册功能-----------	
+//验证用户名是否存在
+		$(".zhuceId01").blur(function(){
+			$.get(
+				"php/checkUser.php",
+				{
+					"userId":$(".zhuceId01").val()	
+				},
+				function(data){
+					if(data=="1"){
+						$(".yonghuSpanIsRepeat").html("√");						
+					}else{
+						$(".yonghuSpanIsRepeat").html("×");
+					}
+				}				
+			);
+			
+		});
+		
+		$(".submitId02").click(function(){
+			//1、
+			$.post(
+				"php/addUser01.php",
+				{
+					"userId":$(".zhuceId01").val(),
+					"userPass":$(".zhuceId02").val()
+				},
+				function(data){					
+					location.href="denglu.html";
+				}
+			);
+		});	
 	
 });
 	

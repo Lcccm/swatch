@@ -243,13 +243,15 @@
 					</div>
 					<div class="chanpin">
 						<div class="chanpinTu">
-							<img src="img/chanpintu04.png"/>
+							<a href="goods.html">
+								<img src="" class="chanpinImg"/>
+							</a>
 						</div>
 						<a href="#">加入购物车</a>
 					</div>
 					<div class="chanpin">
 						<div class="chanpinTu">
-							<img src="img/chanpintu01.png"/>
+							<img src=""/>
 						</div>
 						<a href="#">加入购物车</a>
 					</div>
@@ -439,6 +441,27 @@ $(function(){
 		},1000);
 	});
 
+//-------ajax---------
+
+	//1、从cookie中读取商品编号goodsid
+	let goodsId = 'SUOW154_001';
+	
+	//2、发送ajax请求，获取商品信息
+	$.ajax({
+		type:"get",
+		url:"php/getGoodsInfo.php",
+		async:true,
+		data:{
+			"goodsId":"SUOW154_001"
+		},
+		success:function(data){
+//			$("#goodsname").html(data.goodsname);
+//			$("#goodsprice").html(data.goodsprice);
+//			$("#goodscount").html(data.goodscount);
+			$(".chanpinImg").attr("src",data.goodsImg);
+		},
+		dataType:"json"
+	});	
 
 
 

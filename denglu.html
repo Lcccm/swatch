@@ -164,7 +164,7 @@
 							</div>
 							<div class="dengluContent">
 								<h3>新客户</h3>
-								<p><a href="#">>创建账户</a></p>
+								<p><a href="zhuce.html">>创建账户</a></p>
 							</div>
 						</div>
     				</li>
@@ -192,11 +192,11 @@
 				<p class="yonghuP1">使用邮箱地址登录</p>
 				<form action="" method="post">
 					<div class="yonghuShuRu">
-						<span class="yonghuSpan">* 邮箱地址/电话号码</span>
+						<span class="yonghuSpan yonghuSpan01">* 邮箱地址/电话号码</span>
 						<input type="text" id="dizhiId"/>
 					</div>
 					<div class="yonghuShuRu">
-						<span class="yonghuSpan">* 密码</span>
+						<span class="yonghuSpan yonghuSpan02">* 密码</span>
 						<input type="text" id="passwordId"/>
 						<a href="#" >忘记密码</a>
 					</div>
@@ -216,7 +216,7 @@
 				<h4>新用户</h4>
 				<p class="yonghuP1">注册账户带来更多权益：快速结账，添加多个寄送地址，追踪订单等等。</p>
 				<form action="">
-					<input type="button" class="submitId" value="注册" style="margin-top: 260px;"/>	
+					<a href="zhuce.html"><input type="button" class="submitId" value="注册" style="margin-top: 260px;"/></a>	
 				</form>
 				
 			</div>
@@ -256,7 +256,7 @@
 </html>
 
 
-
+<script type="text/javascript" src="js/cookieTools.js"></script>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript" src="js/commonHeaderAndEnd.js" ></script>
 <script type="text/javascript">
@@ -280,7 +280,26 @@ $(function(){
 		);
 	});
  
-
+//-------------登录功能--------
+$(".submitId").click(function(){
+			//1、
+			$.post(
+				"php/login.php",
+				{
+					"userId":$("#dizhiId").val(),
+					"userPass":$("#passwordId").val()
+				},
+				function(data){					
+					if(data=="1"){//登录成功！
+						//记录cookie
+						saveCookie("userId",$("#dizhiId").val(),7);
+						location.href="index.html";
+					}else{
+						alert("登录失败，用户名或者密码不对！");
+					}
+				}
+			);
+		});
 	
 });
 	
